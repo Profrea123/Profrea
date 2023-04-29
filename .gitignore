@@ -1,0 +1,15 @@
+# folders
+/datafiles
+/demo
+/blog
+/img-old
+/src/Classes/Model/Database.php
+# files
+*.htaccess
+error_log
+/admin-old
+/app
+/blog
+*.profrea.com
+/views-old
+

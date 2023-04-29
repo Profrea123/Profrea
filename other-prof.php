@@ -1,0 +1,35 @@
+<form class="pt-3" id="otherForm" role="form" action="..\src\submit-industry-request" method="post" data-parsley-validate="">
+    <div class='full-input p-2 col-md-12 me-4 mb-3'>
+        <label for="full_name" class="form-label text-grey ft-14 mb-0">Full Name *</label>
+        <input type="text" name='full_name' required data-parsley-minlength="4" placeholder="Enter Your full name">
+    </div>
+    <div class='full-input p-2 col-md-12 me-4 mb-3'>
+        <label for="profession" class="form-label text-grey ft-14 mb-0">Profession *</label>
+        <input type="text" name='profession' required data-parsley-minlength="4" placeholder="Enter Your Profession">
+    </div>
+    <div class='full-input p-2 col-md-12 me-4 mb-3'>
+        <label for="email" class="form-label text-grey ft-14 mb-0">Mail *</label>
+        <input type="email" name='email' required data-parsley-minlength="4" placeholder="Enter Your Mail">
+    </div>
+    <div class='full-input p-2 col-md-12 me-4 mb-3'>
+        <label for="phone" class="form-label text-grey ft-14 mb-0">Phone *</label>
+        <input type="text" name='phone' required data-parsley-minlength="4" placeholder="Enter Your Phone Number">
+    </div>
+    <div class="row pt-2 align-items-center ">
+        <div class="col-md-6 ">
+            <div class="g-recaptcha" data-sitekey="6LfX55EbAAAAAOfxrtASLUNG14LFhb39dNoPvGNG"></div>
+            <!--<input type="hidden" id="captcha-response" requried="" name="captcha-response" />-->
+        </div>
+        <div class="col-md-6 ">
+            <div class="service-btn pt-5 ">
+                <input type="hidden" name="page" value="<?php echo $_SERVER['REQUEST_URI']; ?>"/>
+                <input type="submit" class="text-decoration-none requestbtn" value="Request a callback"/>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:20px">
+        <div id="success" style="display:none;color:green;">Thank you for your interest. We will be in touch with you soon.</div>
+        <div id="error" style="display:none;color:red;">Problem submitting your request, Please try again later.</div>
+    </div>
+</form>
+<div id="otherForm_status"></div>

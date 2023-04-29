@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap:https://demo2.profrea.com/sitemap.xml
+Sitemap:https://demo2.profrea.com/sitemap_1.xml
